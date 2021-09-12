@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- <style src="login.js"></style> -->
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+            <input type="text" placeholder="Username" name="" value="" id="username">
+        </div>
+        <div class="textbox">
+            <input type="password" placeholder="Password" name="" value="" id="password">
+        </div>
+        <input type="button" class="btn" name=""  value="Submit" onclick="validate()">
+
+        <p><a href="#">forgot Password?</a></p>
+       <span><p><a href="#" class="button">Create New account</a></p></span> 
+    </div>
+
+
+
+
+
+    <script>
+        function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if(username=="admin" && password=="user")
+    {
+        alert("Login Successful, an email will be sent to your mail");
+        return false;
+    }
+    else{
+        alert("Login failed. Contact SonnyTech to authenticate you");
+    }
+        
+}
+    </script>
+</body>
+</html>
